@@ -1,13 +1,22 @@
-<header>
-    <div class="flex">
-        <div class="flex-none w-14 h-14 ...">
-          01
+<header class="bg-primary-800 py-3 px-2">
+    <div class="flex max-w-screen-xl mx-auto bg-white px-3 py-2 rounded-md items-center">
+        <div class="flex-none">
+            <a href="{{route('home')}}"><img class="h-8 sm:h-10" src="{{url('/logo.png')}}"
+                    alt="{{config('app.name')}}"></a>
         </div>
-        <div class="grow h-14 bg-red-500">
-          02
+        <div class="grow h-8"></div>
+        <div class="flex-none item-center">
+            <x-w-icon name="view-grid" class="h-8 text-primary-900 lg:hidden"></x-w-icon>
+            <nav class="hidden pr-5 space-x-8 lg:block">
+
+                @foreach(navitems('main') as $nav)
+                    <a href="{{$nav->url}}" class="text-base font-medium text-primary-800 hover:text-primary-900">
+                        {{$nav->name}}
+                    </a>
+                @endforeach
+
+
+            </nav>
         </div>
-        <div class="flex-none w-14 h-14 ...">
-          03
-        </div>
-      </div>
+    </div>
 </header>

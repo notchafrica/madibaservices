@@ -28,6 +28,8 @@ class AppServiceProvider extends ServiceProvider
 
         // main menu
         Nav::define(fn () => [
+            Nav::item(__('About Us'))
+                ->for(route('about')),
             Nav::item(__('Contact Us'))
                 ->for(route('contact')),
         ],'main');

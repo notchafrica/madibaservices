@@ -10,12 +10,10 @@
             <nav class="hidden pr-5 space-x-8 lg:block">
 
                 @foreach(navitems('main') as $nav)
-                    <a href="{{$nav->url}}" class="text-base font-medium text-primary-800 hover:text-primary-900">
+                    <a href="{{$nav->url}}" class="text-base   hover:text-gray-800  @if($nav->active) text-gray-800 font-semibold @else text-primary-800 font-medium @endif">
                         {{$nav->name}}
                     </a>
                 @endforeach
-
-
             </nav>
         </div>
     </div>

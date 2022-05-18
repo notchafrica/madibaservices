@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\About;
 use App\Http\Livewire\Contact;
 use App\Http\Livewire\Home;
 use Illuminate\Support\Facades\Route;
@@ -17,4 +18,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Home::class)->name('home');
 Route::get('contact-us', Contact::class)->name('contact');
+Route::get('about', About::class)->name('about');
 

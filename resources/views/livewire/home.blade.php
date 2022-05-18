@@ -2,7 +2,7 @@
     <div class="space-y-8 md:space-y-16 dark:bg-gray-800 dark:text-gray-100">
         <section class="dark:bg-gray-800 dark:text-gray-100">
             <div
-                class="container flex flex-col justify-center px-6 mx-auto sm:py-12 lg:pb-24 lg:flex-row lg:justify-between">
+                class="container flex flex-col justify-center px-6 mx-auto sm:py-12 lg:pb-16 lg:flex-row lg:justify-between">
                 <div
                     class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-xl lg:text-left">
                     <h1 class="text-5xl font-bold leading-none sm:text-6xl">Ac mattis

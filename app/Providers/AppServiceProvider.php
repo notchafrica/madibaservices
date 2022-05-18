@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Nedwors\Navigator\Facades\Nav;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +24,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
+
+        // main menu
+        Nav::define(fn () => [
+            Nav::item(__('About Us'))
+                ->for(route('about')),
+            Nav::item(__('Contact Us'))
+                ->for(route('contact')),
+        ],'main');
     }
 }
